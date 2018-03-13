@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "accurapp-scripts start",
-    "build": "accurapp-scripts build"
+    "build": "PUBLIC_URL=pixort accurapp-scripts build"
   },
   "devDependencies": {
     "accurapp-scripts": "^3.2.7",
