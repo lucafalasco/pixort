@@ -40,16 +40,20 @@ export default class Uploader extends React.Component {
 
     return (
       <Dropzone
-        className="absolute w-100 h-100 bg-dark-gray white flex justify-center items-center pointer f4"
+        className="absolute w-100 h-100 text-dark bg-white flex justify-center items-center pointer f4"
         accept="image/*"
         maxSize={5000000}
-        onDrop={this.uploadNewImage}>
+        onDrop={this.uploadNewImage}
+      >
         {!isLoading &&
           isBlank && (
-            <div className="w-50 tc f3">Drag and DROP an image here, or CLICK to upload</div>
+            <div className="w-50 tc f4">
+              Drag and <i>drop</i> an image here<br />
+              or <i>click</i> to upload
+            </div>
           )}
         {isLoading && (
-          <div className="relative z-5 w-100 h-100 flex justify-center items-center bg-black-50 white f3">
+          <div className="relative z-5 w-100 h-100 flex justify-center items-center f3">
             Loading...
           </div>
         )}

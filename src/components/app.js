@@ -12,22 +12,24 @@ export default class App extends React.Component {
     const { width, height, image, config } = this.props.state
     const length = Math.min(width, height) * 0.7
     return (
-      <div className="w-100 h-100 bg-light-gray flex justify-center items-center">
+      <div className="w-100 h-100 bg-white text-dark flex justify-center items-center">
         <a
           href="https://github.com/lucafalasco/pixort"
           target="_blank"
-          className="absolute z-5 fw6 f5 link left-2 bottom-2">
+          className="absolute z-5 fw6 f5 link left-2 bottom-2"
+        >
           code
         </a>
         <div className="absolute w-100 h-100">
+          <Uploader />
           <div
-            className="absolute absolute--fill flex items-center"
+            className="absolute absolute--fill flex items-center pointer-events-none"
             style={{
               width: length,
               height: length,
               margin: 'auto',
-            }}>
-            <Uploader />
+            }}
+          >
             <Artwork image={image} config={config} />
           </div>
           <div className="absolute right-2 bottom-2 flex justify-start items-end">

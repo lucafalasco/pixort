@@ -11,7 +11,19 @@ body,
 .pointer-events-none {
   pointer-events: none;
 }
-.monospace {
+
+.text-dark {
+  color: rgb(52, 67, 75);
+}
+.bg-dark {
+  background-color: rgb(52, 67, 75);
+}
+.b--dark {
+  border-color: rgb(52, 67, 75);
+}
+
+input,
+select {
   font-family: 'Inconsolata', monospace;
 }
 

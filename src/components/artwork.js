@@ -12,7 +12,7 @@ export default class Artwork extends React.Component {
   }
   render() {
     return (
-      <div className="absolute w-100 h-100 pointer-events-none ba b--dark-gray bw3">
+      <div className="absolute w-100 h-100">
         <canvas
           id="artwork"
           style={{ width: '100%', height: '100%' }}
