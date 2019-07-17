@@ -1,9 +1,10 @@
 import React from 'react'
-import Options from './options'
-import Uploader from './uploader'
-import Downloader from './downloader'
-import Artwork from './artwork'
 import { inject, observer } from 'mobx-react'
+import Options from './Options'
+import Uploader from './Uploader'
+import Downloader from './Downloader'
+import Artwork from './Artwork'
+import { ReactComponent as Octocat } from '../../public/assets/github.svg'
 
 @inject('state')
 @observer
@@ -16,9 +17,10 @@ export default class App extends React.Component {
         <a
           href="https://github.com/lucafalasco/pixort"
           target="_blank"
-          className="absolute z-5 fw6 f5 link left-2 bottom-2"
+          rel="noopener noreferrer"
+          className="absolute z-5 fw6 f5 black link left-2 bottom-2 w2 h2"
         >
-          code
+          <Octocat className="w2 h2" />
         </a>
         <div className="absolute w-100 h-100">
           <Uploader />

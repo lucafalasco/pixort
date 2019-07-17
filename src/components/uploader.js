@@ -35,6 +35,7 @@ export default class Uploader extends React.Component {
       this.setState({ isBlank: false })
     }
   }
+
   render() {
     const { isLoading, isBlank } = this.state
 
@@ -47,11 +48,11 @@ export default class Uploader extends React.Component {
       >
         {!isLoading &&
           isBlank && (
-            <div className="w-50 tc f4">
+          <div className="w-50 tc f4">
               Drag and <i>drop</i> an image here<br />
               or <i>click</i> to upload
-            </div>
-          )}
+          </div>
+        )}
         {isLoading && (
           <div className="relative z-5 w-100 h-100 flex justify-center items-center f3">
             Loading...

@@ -10,6 +10,7 @@ export default class Artwork extends React.Component {
       sortPixels(image, this.canvas, config.mode, config.iterations)
     }
   }
+
   render() {
     return (
       <div className="absolute w-100 h-100">
